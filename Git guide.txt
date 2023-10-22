@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.Init
 Command to create a new git repository.
 
@@ -15,3 +16,92 @@ Git commit –m “comment”
 Git commit 
 This command will enter editor mode to enter multiline comment.
 
+5. Remote
+Git remote –v
+This command lists repositories on remote server.
+Git remote add <name> <url>
+Command creates a new remote repository.
+   	Git remote rm <name>
+Command deletes a remote repository.
+
+6. Push
+Git push 
+The command allows user to update remote node with current node.
+Needs to associate remote node.
+git push –u origin master
+The command allows to push local master to origin on server.
+
+7. Branch
+To create a new branch in the local repository, you have to use 
+Git branch new_branch_name
+
+To list all branches in repository:	
+				Git branch –a/-l/-r
+8. Checkout
+Git checkout branch_name
+The command makes this node the current HEAD and ensures working directory matches that node / commit.
+It won’t work if there are modified files.
+
+9. Merge
+git merge master
+The command allows user to merge head with master.
+! - Git will automatically apply changes if separate.
+
+You should edit file/s and add first, and then commit.
+
+10. Log
+The command displays entire commit history:
+						Git log
+To alter files and change line:
+   						Git log  --stat
+Branch paths drawn:
+Git log  --graph
+To draw paths condensed output:
+Git log  --graph --oneline
+Only last n commits:
+  						Git log -n
+
+11. Clone
+		Git clone URL
+This command allows to make a copy of a repository that currently exists on GitHub (or other) and save it on PC. After executing clone the repo will be in a sub folder of where user ran the git clone command.
+To access the repo:
+				Cd DirectoryName
+
+12. Pull
+Git pull <remote>
+The command performs a fetch and merge.
+Git pull –rebase
+Performs a fetch and merges the remote origin into local master.
+
+13. Stash
+Git stash
+The command allows user to create a local only copy of the current working directory.
+Git stash list
+Allows user to list previously pushed stash(es).
+
+14. Rm
+Command which allows user to remove file from tracking:
+			Git rm <filename>
+Also:
+-- cached (staging area only)
+-r (recursive)
+-n (dry run list files only)
+=======
+1.Init
+Command to create a new git repository.
+
+2. Add
+Command to add new files to directory.
+ git add .
+Adds files to next commit only.
+
+3. Status
+   git status
+A command which lists files: modified file in working area, added files in staging area, current branch.
+
+4. Commit
+Git commit –m “comment”
+Git commit 
+This command will enter editor mode to enter multiline comment.
+
+>>>>>>> 2e9e87413896531f429b6014fc5c3cdac6e8f81d
