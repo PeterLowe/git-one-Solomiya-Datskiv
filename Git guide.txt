@@ -1,0 +1,17 @@
+1.Init
+Command to create a new git repository.
+
+2. Add
+Command to add new files to directory.
+ git add .
+Adds files to next commit only.
+
+3. Status
+   git status
+A command which lists files: modified file in working area, added files in staging area, current branch.
+
+4. Commit
+Git commit –m “comment”
+Git commit 
+This command will enter editor mode to enter multiline comment.
+
